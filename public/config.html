@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-        <title>hypixel.lol</title>
+        <title>infinitecode.uk</title>
 
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
             
@@ -87,7 +87,7 @@
 
             function getDomains() {
               var domainSelect = document.getElementById("domain-select")
-              $.get("https://hypixel.lol/api/domains", (data, status) => {
+              $.get("https://infinitecode.uk/api/domains", (data, status) => {
                 data.forEach(item => {
                   var el = document.createElement("option")
                   el.value = item
@@ -124,10 +124,10 @@
       
               config = {
                           "Version": "13.4.0",
-                          "Name": "hypixel.lol",
+                          "Name": "infinitecode.uk",
                           "DestinationType": "ImageUploader, FileUploader",
                           "RequestMethod": "POST",
-                          "RequestURL": "https://hypixel.lol/upload",
+                          "RequestURL": "https://infinitecode.uk/upload",
                           "Body": "MultipartFormData",
                           "Arguments": {
                             "upload-key": uploadKey.value,
